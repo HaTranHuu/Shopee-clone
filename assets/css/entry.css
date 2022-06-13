@@ -1,0 +1,252 @@
+/* Header nav bar */
+.header {
+  display: flex;
+  height: 8.4rem;
+  align-items: center;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__navbar-title {
+  display: flex;
+  align-items: center;
+}
+
+.header__navbar-title-p {
+  /* margin: 0; */
+  font-size: 2.4rem;
+  color: var(--txt-color);
+}
+
+.header__navbar-title-link {
+  cursor: pointer;
+  color: var(--primary-color);
+  margin-right: 15px;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+/* Body */
+.logIn-container,
+.signUp-container {
+  background-color: rgb(238, 78, 46);
+}
+
+.seller-logIn-container {
+  background-color: rgb(246, 246, 246);
+}
+
+.form-area {
+  display: flex;
+  margin: 0 auto;
+  max-width: 104rem;
+  min-height: 60rem;
+  align-items: center;
+}
+
+.form-area__background-img {
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-image: url(https://cf.shopee.vn/file/0075d6b0e24ec6feff5e055cfc918e73);
+}
+
+.form-area__img {
+  justify-content: space-between;
+}
+
+.form-area__content-text {
+  font-size: 1.8rem;
+  line-height: normal;
+  margin-bottom: 32px;
+  color: var(--txt-color);
+}
+
+.form-area__content-img {
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://deo.shopeemobile.com/shopee/shopee-seller-live-sg/rootpages/static/modules/account/image/login-img.9347138.png);
+}
+
+.entry-form {
+  width: 40rem;
+  min-height: 43rem;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--white-color);
+}
+
+.entry-form__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2.2rem 3rem;
+  justify-content: space-between;
+}
+
+.entry-form__heading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--txt-color);
+}
+
+.entry-form__qr-code {
+  display: flex;
+  align-items: center;
+}
+
+.entry-form__qr-detail {
+  color: #ffbf00;
+  font-size: 1.4rem;
+  position: relative;
+  padding: 1rem 1.4rem;
+  margin-right: 1rem;
+  border: 2px solid #ffbf00;
+  background-color: #fefaec;
+}
+
+.entry-form__qr-detail::after {
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(45deg) translateX(-50%);
+  border-top: 2px solid #ffbf00;
+  border-right: 2px solid #ffbf00;
+  top: 47%;
+  right: -1rem;
+  background-color: #fefaec;
+}
+
+.login-qr-code {
+  width: 4rem;
+  height: 4rem;
+}
+
+.entry-form__body {
+  padding: 0 30px 30px;
+}
+
+.entry-form__row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.entry-form__input {
+  flex: 1 0 0;
+  height: 40px;
+  outline: none;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.entry-form__input-container:hover {
+  border-color: #b7b7b7;
+}
+
+.entry-form__input-container:focus-within {
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
+}
+
+.entry-form__input-container {
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.entry-form__input--display-password {
+  border: none;
+  opacity: .54;
+  cursor: pointer;
+  padding: 0 1.6rem;
+  background-color: transparent;
+}
+
+.entry-form__checkbox-remember-me {
+  display: flex;
+  cursor: pointer;
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+.entry-form__checkbox-remember-me input {
+  display: none;
+}
+
+.entry-form__checkbox-remember-me input:checked + .check-mark {
+  border: 0;
+  background-color: var(--primary-color);
+}
+
+.entry-form__checkbox-remember-me input:checked + .check-mark::after {
+  display: block;
+}
+
+.entry-form__separate-text {
+  color: #ccc;
+  padding: 0 1.6rem;
+  font-size: 1.2rem;
+}
+
+.entry-form__btn-login {
+  flex: 1;
+  height: 4rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.entry-form__btn-login:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.entry-form__btn-login:hover:not(.btn--disable) {
+  opacity: 0.6;
+}
+
+.entry-form__btn-logo {
+  height: 24px;
+  width: 24px;
+  margin-right: 6px;
+}
+
+.entry-form__policy-service {
+  font-size: 1.4rem;
+  padding: 1rem 1rem 0 1rem;
+  justify-content: center;
+}
+
+.entry-form__link {
+  color: #05a;
+  font-size: 1.4rem;
+}
+
+.entry-form__footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.entry-form__switch-link {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.footer {
+  height: 200px;
+  background-color: var(--white-color);
+}
