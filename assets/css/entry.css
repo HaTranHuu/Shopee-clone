@@ -10,6 +10,10 @@
   justify-content: space-between;
 }
 
+.header__mobile-navbar {
+  display: none;
+}
+
 .header__navbar-title {
   display: flex;
   align-items: center;
@@ -32,23 +36,28 @@
 /* Body */
 .logIn-container,
 .signUp-container {
+  overflow: hidden;
   background-color: rgb(238, 78, 46);
 }
 
 .seller-logIn-container {
+  overflow: hidden;
   background-color: rgb(246, 246, 246);
 }
 
 .form-area {
   display: flex;
   margin: 0 auto;
+  padding: 0 1rem;
   max-width: 104rem;
   min-height: 60rem;
   align-items: center;
 }
 
 .form-area__background-img {
+  background-size: contain;
   justify-content: flex-end;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url(https://cf.shopee.vn/file/0075d6b0e24ec6feff5e055cfc918e73);
 }
@@ -124,6 +133,10 @@
   background-color: #fefaec;
 }
 
+.entry-form__icon {
+  display: none;
+}
+
 .login-qr-code {
   width: 4rem;
   height: 4rem;
@@ -164,7 +177,7 @@
 
 .entry-form__input--display-password {
   border: none;
-  opacity: .54;
+  opacity: 0.54;
   cursor: pointer;
   padding: 0 1.6rem;
   background-color: transparent;
@@ -226,6 +239,10 @@
   justify-content: center;
 }
 
+.entry-form__policy-service span {
+  padding: 0.5rem 0;
+}
+
 .entry-form__link {
   color: #05a;
   font-size: 1.4rem;
@@ -240,13 +257,12 @@
 
 .entry-form__switch-link {
   display: flex;
-  font-size: 14px;
+  font-size: 1.4rem;
   align-items: center;
   justify-content: center;
   color: rgba(0, 0, 0, 0.26);
 }
 
-.footer {
-  height: 200px;
-  background-color: var(--white-color);
+.entry-form__switch-link a {
+  padding-left: 1rem;
 }

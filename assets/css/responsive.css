@@ -12,7 +12,9 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
     position: fixed;
+    background-color: var(--white-color);
   }
 
   .header__cart-list {
@@ -34,12 +36,34 @@
     display: block;
   }
 
-  .app__container {
+  .app__container,
+  .logIn-container,
+  .signUp-container,
+  .seller-logIn-container {
     margin-top: var(--header-height);
   }
 
   .footer__terms-and-policy span:nth-child(even) a {
     border-right: none;
+  }
+
+  /* Entry Form */
+  .header__mobile-navbar {
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+  }
+
+  .header__navbar-title-p {
+    font-size: 2.1rem;
+  }
+
+  .header__navbar-title-link {
+    font-size: 1.8rem;
+  }
+
+  .form-area__content-text {
+    font-size: 1.5rem;
   }
 }
 /* Tablet */
@@ -182,6 +206,38 @@
   .footer__company-name,
   .footer__company-info-text {
     color: var(--txt-color);
+  }
+
+  /* Entry form */
+  .logIn-container,
+  .signUp-container,
+  .seller-logIn-container {
+    background-color: var(--white-color);
+  }
+
+  .form-area {
+    height: 100vh;
+  }
+
+  .form-area__img,
+  .form-area.form-area__background-img {
+    padding-left: 0;
+    padding-right: 0;
+    background-image: none;
+    justify-content: center;
+  }
+
+  .entry-form__header {
+    justify-content: center;
+  }
+
+  .entry-form__icon {
+    display: block;
+  }
+
+  .entry-form__switch-link,
+  .entry-form__policy-service {
+    font-size: 1.5rem;
   }
 }
 
